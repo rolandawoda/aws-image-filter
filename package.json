@@ -7,7 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf www/ || true",
     "build": "npm run clean && tsc && copy package.json www\\package.json && mkdir www\\tmp\\ && cd www && zip -r Archive.zip . && cd ..",
-    "builddev":  "npm run clean && tsc && copy package.json www\\package.json && mkdir www\\tmp\\ && 7z a -tzip www\\Archive.zip www\\* && cd ..",
     "dev": "ts-node-dev --respawn --transpile-only ./src/server.ts"
   },
   "repository": {
